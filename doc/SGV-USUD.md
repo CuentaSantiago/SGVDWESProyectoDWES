@@ -830,17 +830,17 @@ Sustituye NUMERO por el identificador real de la regla.
 
 Importante: no elimines automáticamente todas las reglas IPv6. IPv6 puede ser necesario para el funcionamiento normal de la red. Elimina únicamente las reglas que hayas confirmado que no necesitas.
 ### 7.3. Lista de comprobación final
-Ubuntu está instalado y actualizado.
-Las particiones / y /var están configuradas.
-La dirección IP y la zona horaria son correctas.
-SSH está instalado y permite conexiones desde otra máquina.
-UFW está activo y contiene las reglas necesarias.
-ClamAV está instalado y actualizado.
-El usuario miadmin2 dispone de los permisos administrativos previstos.
-Apache está instalado y sirve la página web.
-PHP-FPM está instalado y configurado.
-HTTPS funciona con el certificado configurado.
-MariaDB está instalado y protegido.
-phpMyAdmin está instalado.
-El usuario operadorweb puede trabajar con el directorio web.
-Los puertos y las reglas del firewall han sido revisados.
+* Ubuntu está instalado y actualizado.
+* Las particiones / y /var están configuradas.
+* La dirección IP y la zona horaria son correctas.
+* SSH está instalado y permite conexiones desde otra máquina.
+* UFW está activo y contiene las reglas necesarias.
+* ClamAV está instalado y actualizado.
+* El usuario miadmin2 dispone de los permisos administrativos previstos.
+* Apache está instalado y sirve la página web.
+* PHP-FPM está instalado y configurado.
+* HTTPS funciona con el certificado configurado.
+* MariaDB está instalado y protegido.
+* phpMyAdmin está instalado.
+* El usuario operadorweb puede trabajar con el directorio web.
+* Los puertos y las reglas del firewall han sido revisados.
