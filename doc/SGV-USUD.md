@@ -490,14 +490,12 @@ Genera una clave privada y un certificado autofirmado con una validez de 365 dí
 
 bash
 ``` bash
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
--keyout
-```/etc/ssl/private/apache-selfsigned.key \
--out /etc/ssl/certs/apache-selfsigned.crt
-
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+```
 
 Durante el proceso, OpenSSL solicitará varios datos:
 
+``` bash
 Campo	Valor
 Country Name	ES para España
 State or Province Name	Provincia o comunidad correspondiente
@@ -506,6 +504,7 @@ Organization Name	Nombre de la organización, preferiblemente en mayúsculas
 Organizational Unit Name	Departamento, por ejemplo IT Department, o dejarlo vacío
 Common Name	Dominio, nombre del servidor o dirección IP correspondiente
 Email Address	Puede dejarse vacío
+```
 
 El campo Common Name no debe contener espacios en blanco.
 
