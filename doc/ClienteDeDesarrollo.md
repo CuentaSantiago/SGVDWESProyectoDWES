@@ -87,7 +87,7 @@
 | GitHub Actions | La extensión de GitHub Actions te permite gestionar tus flujos de trabajo, consultar el historial de ejecución de los mismos y te ayuda en la creación de flujos de trabajo. | 0.32.3 | [Enlace](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) |
 | vscode-pdf | Muestran Ficheros PDF en vscode | 1.2.2 | [Enlace](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) |
 | Start git-bash | Añade un comando bash a VS Code que permite iniciar git-bash en la carpeta raíz del espacio de trabajo actual.  | 1.2.1 | [Enlace](https://marketplace.visualstudio.com/items?itemName=McCarter.start-git-bash) |
-| SQLTools MySQL/MariaDB/TiDB Driver | Parte de un paquete, enlace [link](https://vscode-sqltools.mteixeira.dev/en/home)  0.32.3 | [Enlace](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql) |
+| SQLTools MySQL/MariaDB/TiDB Driver | Parte de un paquete, enlace [link](https://vscode-sqltools.mteixeira.dev/en/home) | 0.32.3 | [Enlace](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql) |
 | SQLTools | SQLTools es un conjunto de extensiones para VS Code que permiten conectarse a un gestor de bases de datos SQL, realizar consultas y mostrar los resultados.  | 0.28.6 | [Enlace](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools) |
 | GitHub Actions |   | 0.32.3 | [Enlace](https://plugins.netbeans.apache.org/catalogue/?id=93) |
 | GitHub Actions |   | 0.32.3 | [Enlace](https://plugins.netbeans.apache.org/catalogue/?id=93) |
