@@ -49,10 +49,10 @@
   - 6.6.[Seguridad de MariaDB](#66-Seguridad-de-MariaDB)
   - 6.7.[Instalación del módulo MySQL para PHP](#67-Instalación-del-módulo-MySQL-para-PHP)
   - 6.8.[Instalación de phpMyAdmin](#68-Instalación-de-phpMyAdmin)
-- 7.[Chequeo final](#7-Chequeo-final)
-  - 7.1.[Comprobación de las reglas del firewall](#71-Comprobación-de-las-reglas-del-firewall)
-  - 7.2.[Eliminación de reglas innecesarias](#72-Eliminación-de-reglas-innecesarias)
-  - 7.3.[Lista de comprobación final](#73-Lista-de-comprobación-final)
+- 8.[Chequeo final](#8-Chequeo-final)
+  - 8.1.[Comprobación de las reglas del firewall](#81-Comprobación-de-las-reglas-del-firewall)
+  - 8.2.[Eliminación de reglas innecesarias](#82-Eliminación-de-reglas-innecesarias)
+  - 8.3.[Lista de comprobación final](#83-Lista-de-comprobación-final)
 ---
 
 ## 1. Instalación y configuración inicial
@@ -536,19 +536,19 @@ sudo nano /etc/apache2/sites-available/default-ssl.conf
 ```
 
 Configura el sitio virtual para utilizar HTTPS:
-
+``` bash
 apache
 <VirtualHost *:443>
     ServerName your_domain_or_ip
-    DocumentRoot /var/www/your_ip
+    DocumentRoot /var/www/html
 
     SSLEngine on
     SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
     SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
 </VirtualHost>
+```
 
-
-Sustituye your_domain_or_ip y /var/www/your_ip por los valores que correspondan a tu servidor y a la ubicación real de tu sitio web.
+Sustituye your_domain_or_ip por los valores que correspondan a tu servidor y a la ubicación real de tu sitio web.
 
 ### 5.5. Activación del sitio virtual
 
@@ -580,7 +580,24 @@ bash
 ``` bash
 sudo a2enmod rewrite
 ```
-### 5.7. Configuración de .htaccess
+
+### 5.7. Havilitar AllowOverdrive apache
+
+Entrar al archivo de configuracion usando:
+
+``` bash
+sudo nano /etc/apache2/apache2.conf
+```
+
+con ctl + W var a <Directory /var/www/>
+y modificas
+``` bash
+<Directory /var/www/>
+  ...
+  AllowOverride All
+</Directory>
+```
+### 5.8. Configuración de .htaccess
 
 Accede al directorio web:
 
@@ -791,8 +808,18 @@ Puedes utilizar paso únicamente en un entorno de prácticas aislado; en cualqui
 
 Una vez terminada la instalación, comprueba que Apache, PHP-FPM y MariaDB funcionan correctamente.
 
-## 7. Chequeo final
-### 7.1. Comprobación de las reglas del firewall
+## 7. Xdebug
+### 7.1 Instalacion
+
+Introduce este comando para instalar x-debug
+``` bash
+ sudo apt install php8.5-xdebug
+```
+
+
+
+## 8. Chequeo final
+### 8.1. Comprobación de las reglas del firewall
 
 Muestra las reglas de UFW con sus números:
 
@@ -810,7 +837,7 @@ Puerto	Protocolo	Servicio
 80	TCP	HTTP
 443	TCP	HTTPS
 3306	TCP	MariaDB, si se permite el acceso remoto
-### 7.2. Eliminación de reglas innecesarias
+### 8.2. Eliminación de reglas innecesarias
 
 Si aparecen reglas IPv6 duplicadas que deseas eliminar, identifica primero el número de la regla:
 
@@ -829,7 +856,7 @@ sudo ufw delete NUMERO
 Sustituye NUMERO por el identificador real de la regla.
 
 Importante: no elimines automáticamente todas las reglas IPv6. IPv6 puede ser necesario para el funcionamiento normal de la red. Elimina únicamente las reglas que hayas confirmado que no necesitas.
-### 7.3. Lista de comprobación final
+### 8.3. Lista de comprobación final
 * Ubuntu está instalado y actualizado.
 * Las particiones / y /var están configuradas.
 * La dirección IP y la zona horaria son correctas.
