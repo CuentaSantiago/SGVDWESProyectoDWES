@@ -26,7 +26,8 @@
         <div>
             <div>
                 <h2>UT2: INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DEL ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN</h2>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md">Documentación</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md">SGV-USUD</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md">Cliente</a></h4>
                 <h4><a href="doc/SGVDWESProyectoTema4.pdf">Documentación Netbeans</a></h4>
                 <h4><a href="doc/EstudioFuncionesPHP.pdf">Funciones PHP</a></h4>
             </div>
