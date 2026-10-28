@@ -524,8 +524,8 @@ Realiza una copia de seguridad del archivo de configuración original:
 bash
 ``` bash
 sudo cp /etc/apache2/sites-available/default-ssl.conf \
-/etc/ap
-```che2/sites-available/defaultsafecopy-ssl.conf
+/etc/apche2/sites-available/defaultsafecopy-ssl.conf
+```
 
 
 Edita el archivo de configuración SSL:
