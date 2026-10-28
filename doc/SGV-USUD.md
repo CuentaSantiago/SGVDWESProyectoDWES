@@ -629,7 +629,7 @@ Configuración original de redirección:
 apache
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ 10.199.9.174/$1 [R,L]
+RewriteRule ^(.*)$ https://10.199.9.174/$1 [R,L]
 ```
 
 Asegúrate de que el sitio HTTPS funciona antes de habilitar una redirección permanente.
