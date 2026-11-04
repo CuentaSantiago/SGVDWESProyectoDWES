@@ -20,16 +20,16 @@
         <div>
             <div>
                 <h2>UT1: DESARROLLO WEB EN ENTORNO SERVIDOR</h2>
-                <h4><a href="doc/EstudioTema1.pdf">Entudio tema 1</a></h4>
+                <h4><a href="doc/EstudioTema1.pdf" target="_blank" rel="noopener">Entudio tema 1</a></h4>
             </div>
         </div>
         <div>
             <div>
                 <h2>UT2: INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DEL ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN</h2>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md">SGV-USUD</a></h4>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md">Cliente</a></h4>
-                <h4><a href="doc/SGVDWESProyectoTema4.pdf">Documentación Netbeans</a></h4>
-                <h4><a href="doc/EstudioFuncionesPHP.pdf">Funciones PHP</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md" target="_blank" rel="noopener">SGV-USUD</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md" target="_blank" rel="noopener">Cliente</a></h4>
+                <h4><a href="doc/SGVDWESProyectoTema4.pdf" target="_blank" rel="noopener">Documentación Netbeans</a></h4>
+                <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
             </div>
         </div>
         <div>
