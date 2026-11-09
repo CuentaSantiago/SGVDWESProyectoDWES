@@ -835,6 +835,11 @@ xdebug.idekey="netbeans-xdebug"
 xdebug.discover_client_host=1
 ``` 
 
+despues reinicias php8.5-fpm
+``` bash
+sudo systemctl restart php8.5-fpm &&
+sudo systemctl restart php8.5-xdebug
+``` 
 
 ## 8. Chequeo final
 ### 8.1. Comprobación de las reglas del firewall
