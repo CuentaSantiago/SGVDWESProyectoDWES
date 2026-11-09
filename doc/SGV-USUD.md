@@ -819,6 +819,21 @@ Introduce este comando para instalar x-debug
  sudo apt install php8.5-xdebug
 ```
 
+entras en xdebug.ini
+``` bash
+sudo nano /etc/php/8.5/mods-available/xdebug.ini
+``` 
+
+introduces debajo de zend_extension=xdebug.so esto 
+``` bash
+xdebug.mode=develop,debug
+xdebug.start_with_request=yes
+xdebug.client_host=127.0.0.1
+xdebug.client_port=9003
+xdebug.log_level=7
+xdebug.idekey="netbeans-xdebug"
+xdebug.discover_client_host=1
+``` 
 
 
 ## 8. Chequeo final
@@ -835,11 +850,14 @@ Revisa los puertos permitidos y comprueba que solo estén abiertos los necesario
 
 En este servidor se utilizan, como mínimo, los siguientes puertos según los servicios habilitados:
 
-Puerto	Protocolo	Servicio
-22	TCP	SSH
-80	TCP	HTTP
-443	TCP	HTTPS
-3306	TCP	MariaDB, si se permite el acceso remoto
+| Puerto | Protocolo | Servicio |
+| --- | --- | --- |
+| 22 | TCP | SSH |
+| 80 | TCP | HTTP |
+| 443 | TCP | HTTPS |
+| 3306 | TCP | MariaDB, si se permite el acceso remoto |
+| 9003 | TCP | Xdebug |
+
 ### 8.2. Eliminación de reglas innecesarias
 
 Si aparecen reglas IPv6 duplicadas que deseas eliminar, identifica primero el número de la regla:
