@@ -11,25 +11,13 @@
   - 2.1.[Google](#21-Google)
   - 2.2.[Microsoft Edge](#22-Microsoft-Edge)
 - 3.[Netbeans](#3-Netbeans)
-  - 3.1.[Apertura del puerto HTTP](#31-Apertura-del-puerto-HTTP)
-  - 3.2.[Instalación de Apache](#32-Instalación-de-Apache)
-  - 3.2.[Instalación de PHP-FPM](#33-Instalación-de-PHP-FPM)
-  - 3.2.[Configuración de PHP](#34-Configuración-de-PHP)
-  - 3.2.[Configuración del registro de errores](#35-Configuración-del-registro-de-errores)
-- 4.[Cuentas de desarrollo](4-Cuentas-de-desarrollo)
-  - 4.1.[Creación del usuario](#41-Creación-del-usuario)
-  - 4.2.[Asignación de contraseña](#42-Asignación-de-contraseña)
-  - 4.3.[Cambio de propietario y grupo](#43-Cambio-de-propietario-y-grupo)
-  - 4.4.[Configuración de permisos](#44-Configuración-de-permisos)
-  - 4.5.[Comprobación del usuario y del directorio web](#45-Comprobación-del-usuario-y-del-directorio-web)
-- 5.[Configuración de HTTPS](#5-Configuración-de-HTTPS)
-  - 5.1.[Apertura del puerto HTTPS](#51-Apertura-del-puerto-HTTPS)
-  - 5.2.[Creación de un certificado SSL autofirmado](#52-Creación-de-un-certificado-SSL-autofirmado)
-  - 5.3.[Habilitación del módulo SSL](#53-Habilitación-del-módulo-SSL)
-  - 5.4.[Configuración del sitio virtual seguro](#54-Configuración-del-sitio-virtual-seguro)
-  - 5.5.[Activación del sitio virtual](#55-Activación-del-sitio-virtual)
-  - 5.6.[Habilitación de mod_rewrite](#56-Habilitación-de-mod_rewrite)
-  - 5.7.[Configuración de .htaccess](#57-Configuración-de-.htaccess)
+  - 3.1.[3.1. Caracteristicas](#31-Caracteristicas)
+  - 3.2.[3.2. Plugins](#32-Plugins)
+- 4.[VScode](4-VScode)
+  - 4.1.[3.1. Caracteristicas](#41-Caracteristicas)
+  - 4.2.[3.2. Extensions](#42-Extensions)
+- 5. [MobaXterm] (5-MobaXterm)
+  - 5.1. [Caracteristicas] (51-Caracteristicas)
 
 ## 1. CLIENTE DE DESARROLLO - WINDOWS 10
 
@@ -76,11 +64,11 @@
 
 ## 4. VScode
 
-### 3.1. Caracteristicas
+### 4.1. Caracteristicas
 *   **Version: Apache NetBeans IDE 20**
 *   **Utilidad: creación y trabajo en proyectos, github, sftp, ssh**
 
-### 3.2. Extensions
+### 4.2. Extensions
 
 | Nombre | Proposito | Versión | Enlace |
 | --- | --- | --- | --- |
@@ -94,3 +82,9 @@
 | Remote Explorer | Las extensiones Remote - SSH y Remote - Tunnels te permiten utilizar cualquier máquina remota como tu entorno de desarrollo. | 0.5.0 | [Enlace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer) |
 | Remote - SSH: Editing Configuration Files | La extensión Remote - SSH te permite utilizar cualquier máquina remota que cuente con un servidor SSH como tu entorno de desarrollo. | 0.87.0 | [Enlace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit) |
 | Remote - SSH | Abre cualquier carpeta en una máquina remota mediante SSH y aprovecha el conjunto completo de funcionalidades de VS Code. | 0.128.0 | [Enlace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) |
+
+## 5. MobaXterm
+
+### 5.1. Caracteristicas
+*   **Version: MobaXterm Portable Version 26.5**
+*   **Utilidad: conexion a servidor, github, sftp, ssh, http, htpps**

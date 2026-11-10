@@ -12,50 +12,50 @@
   - 1.3.[Configuración de red](#13-Configuración-de-red)
   - 1.4.[Configuración de la hora](#14-Configuración-de-la-hora)
   - 1.5.[Actualización del sistema](#15-Actualización-del-sistema)
-  - 1.6.[Instalación y configuración de SSH](#16-Instalación-y-configuración-de-SSH)
-  - 1.7.[Configuración del firewall UFW](#17-Configuración-del-firewall-UFW)
-  - 1.8.[Instalación del antivirus](#18-Instalación-del-antivirus)
-- 2.[Cuentas de administración](#2-Cuentas-de-administración)
-  - 2.1.[Creación del usuario](#21-Creación-del-usuario)
-  - 2.2.[Comprobación de grupos](#22-Comprobación-de-grupos)
-  - 2.3.[Asignación de permisos administrativos](#23-Asignación-de-permisos-administrativos)
-  - 2.4.[Comprobación de permisos](#24-Comprobación-de-permisos)
-- 3.[Servidor web Apache y PHP](#3-Servidor-web-Apache-y-PHP)
-  - 3.1.[Apertura del puerto HTTP](#31-Apertura-del-puerto-HTTP)
-  - 3.2.[Instalación de Apache](#32-Instalación-de-Apache)
-  - 3.2.[Instalación de PHP-FPM](#33-Instalación-de-PHP-FPM)
-  - 3.2.[Configuración de PHP](#34-Configuración-de-PHP)
-  - 3.2.[Configuración del registro de errores](#35-Configuración-del-registro-de-errores)
-- 4.[Cuentas de desarrollo](4-Cuentas-de-desarrollo)
-  - 4.1.[Creación del usuario](#41-Creación-del-usuario)
-  - 4.2.[Asignación de contraseña](#42-Asignación-de-contraseña)
-  - 4.3.[Cambio de propietario y grupo](#43-Cambio-de-propietario-y-grupo)
-  - 4.4.[Configuración de permisos](#44-Configuración-de-permisos)
-  - 4.5.[Comprobación del usuario y del directorio web](#45-Comprobación-del-usuario-y-del-directorio-web)
-- 5.[Configuración de HTTPS](#5-Configuración-de-HTTPS)
-  - 5.1.[Apertura del puerto HTTPS](#51-Apertura-del-puerto-HTTPS)
-  - 5.2.[Creación de un certificado SSL autofirmado](#52-Creación-de-un-certificado-SSL-autofirmado)
-  - 5.3.[Habilitación del módulo SSL](#53-Habilitación-del-módulo-SSL)
-  - 5.4.[Configuración del sitio virtual seguro](#54-Configuración-del-sitio-virtual-seguro)
-  - 5.5.[Activación del sitio virtual](#55-Activación-del-sitio-virtual)
-  - 5.6.[Habilitación de mod_rewrite](#56-Habilitación-de-mod_rewrite)
-  - 5.7.[Havilitar AllowOverdrive apache](#57-Havilitar-AllowOverdrive-apache)
-  - 5.8.[Configuración de .htaccess](#58-Configuración-de-.htaccess)
-- 6.[MariaDB y phpMyAdmin](#6-MariaDB-y-phpMyAdmin)
-  - 6.1.[Instalación de MariaDB](#61-Instalación-de-MariaDB)
-  - 6.2.[Comprobación del puerto](#62-Comprobación-del-puerto)
-  - 6.3.[Configuración del acceso remoto](#63-Configuración-del-acceso-remoto)
-  - 6.4.[Mantenimiento del servicio MariaDB](#64-Mantenimiento-del-servicio-MariaDB)
-  - 6.5.[Creación de un usuario administrador](#65-Creación-de-un-usuario-administrador)
-  - 6.6.[Seguridad de MariaDB](#66-Seguridad-de-MariaDB)
-  - 6.7.[Instalación del módulo MySQL para PHP](#67-Instalación-del-módulo-MySQL-para-PHP)
-  - 6.8.[Instalación de phpMyAdmin](#68-Instalación-de-phpMyAdmin)
-- 7.[Xdebug](7-Xdebug)
-  - 7.1.[Instalacion](#71-Instalacion)
-- 8.[Chequeo final](#8-Chequeo-final)
-  - 8.1.[Comprobación de las reglas del firewall](#81-Comprobación-de-las-reglas-del-firewall)
-  - 8.2.[Eliminación de reglas innecesarias](#82-Eliminación-de-reglas-innecesarias)
-  - 8.3.[Lista de comprobación final](#83-Lista-de-comprobación-final)
+- 2.[SSH](#2-SSH)
+- 3.[UFW](#3-UFW)
+- 4.[ClamAV](#4-ClamAV)
+- 5.[Cuentas de administración](#5-Cuentas-de-administración)
+  - 5.1.[Creación del usuario](#51-Creación-del-usuario)
+  - 5.2.[Comprobación de grupos](#52-Comprobación-de-grupos)
+  - 5.3.[Asignación de permisos administrativos](#53-Asignación-de-permisos-administrativos)
+  - 5.4.[Comprobación de permisos](#54-Comprobación-de-permisos)
+- 6.[Servidor web Apache](#6-Servidor-web-Apache)
+  - 6.1.[Apertura del puerto HTTP](#61-Apertura-del-puerto-HTTP)
+  - 6.2.[Instalación de Apache](#62-Instalación-de-Apache)
+- 7.[PHP-FPM](#7-PHP-FPM)
+  - 7.1.[Configuración de PHP](#71-Configuración-de-PHP)
+  - 7.2.[Configuración del registro de errores](#72-Configuración-del-registro-de-errores)
+- 8.[Cuentas de desarrollo](8-Cuentas-de-desarrollo)
+  - 8.1.[Creación del usuario](#81-Creación-del-usuario)
+  - 8.2.[Asignación de contraseña](#82-Asignación-de-contraseña)
+  - 8.3.[Cambio de propietario y grupo](#83-Cambio-de-propietario-y-grupo)
+  - 8.4.[Configuración de permisos](#84-Configuración-de-permisos)
+  - 8.5.[Comprobación del usuario y del directorio web](#85-Comprobación-del-usuario-y-del-directorio-web)
+- 9.[Configuración de HTTPS](#9-Configuración-de-HTTPS)
+  - 9.1.[Apertura del puerto HTTPS](#91-Apertura-del-puerto-HTTPS)
+  - 9.2.[Creación de un certificado SSL autofirmado](#92-Creación-de-un-certificado-SSL-autofirmado)
+  - 9.3.[Habilitación del módulo SSL](#93-Habilitación-del-módulo-SSL)
+  - 9.4.[Configuración del sitio virtual seguro](#94-Configuración-del-sitio-virtual-seguro)
+  - 9.5.[Activación del sitio virtual](#95-Activación-del-sitio-virtual)
+  - 9.6.[Habilitación de mod_rewrite](#96-Habilitación-de-mod_rewrite)
+  - 9.7.[Havilitar AllowOverdrive apache](#97-Havilitar-AllowOverdrive-apache)
+  - 9.8.[Configuración de .htaccess](#98-Configuración-de-.htaccess)
+- 10.[MariaDB y phpMyAdmin](#10-MariaDB-y-phpMyAdmin)
+  - 10.1.[Instalación de MariaDB](#101-Instalación-de-MariaDB)
+  - 10.2.[Comprobación del puerto](#102-Comprobación-del-puerto)
+  - 10.3.[Configuración del acceso remoto](#103-Configuración-del-acceso-remoto)
+  - 10.4.[Mantenimiento del servicio MariaDB](#104-Mantenimiento-del-servicio-MariaDB)
+  - 10.5.[Creación de un usuario administrador](#105-Creación-de-un-usuario-administrador)
+  - 10.6.[Seguridad de MariaDB](#106-Seguridad-de-MariaDB)
+  - 10.7.[Instalación del módulo MySQL para PHP](#107-Instalación-del-módulo-MySQL-para-PHP)
+  - 10.8.[Instalación de phpMyAdmin](#108-Instalación-de-phpMyAdmin)
+- 11.[Xdebug](11-Xdebug)
+  - 11.1.[Instalacion](#111-Instalacion)
+- 12.[Chequeo final](#12-Chequeo-final)
+  - 12.1.[Comprobación de las reglas del firewall](#121-Comprobación-de-las-reglas-del-firewall)
+  - 12.2.[Eliminación de reglas innecesarias](#122-Eliminación-de-reglas-innecesarias)
+  - 12.3.[Lista de comprobación final](#123-Lista-de-comprobación-final)
 ---
 
 ## 1. Instalación y configuración inicial
@@ -179,7 +179,7 @@ bash
 ``` bash
 sudo apt-get update -y && sudo apt-get upgrade -y
 ```
-### 1.6. Instalación y configuración de SSH
+## 2. SSH
 
 Instala el servidor SSH:
 
@@ -218,7 +218,7 @@ ssh usuario@DIRECCION_IP
 
 Sustituye usuario y DIRECCION_IP por los datos de tu servidor.
 
-### 1.7. Configuración del firewall UFW
+## 3.UFW
 
 Activa el firewall:
 
@@ -243,7 +243,7 @@ sudo ufw status verbose
 
 Los puertos adicionales se habilitarán a medida que se instalen y configuren los servicios.
 
-### 1.8. Instalación del antivirus
+## 4. ClamAV
 
 Instala ClamAV y su servicio en segundo plano:
 
@@ -267,11 +267,11 @@ sudo systemctl start clamav-freshclam
 sudo sytemctl enable clamav-freshclam
 ```
 
-## 2. Cuentas de administración
+## 5. Cuentas de administración
 
 En este apartado se creará una cuenta administrativa llamada miadmin2.
 
-### 2.1. Creación del usuario
+### 5.1. Creación del usuario
 
 Crea el usuario:
 
@@ -288,7 +288,7 @@ paso
 
 Completa los datos adicionales que solicite el sistema.
 
-### 2.2. Comprobación de grupos
+### 5.2. Comprobación de grupos
 
 Consulta los grupos del usuario actual:
 
@@ -299,7 +299,7 @@ sudo id
 
 En la salida, busca el apartado groups= para identificar los grupos a los que pertenece.
 
-### 2.3. Asignación de permisos administrativos
+### 5.3. Asignación de permisos administrativos
 
 Añade el usuario miadmin2 a los grupos indicados:
 
@@ -307,7 +307,7 @@ bash
 ``` bash
 sudo usermod -aG sudo,dip,adm,cdrom,plugdev,lxd miadmin2
 ```
-### 2.4. Comprobación de permisos
+### 5.4. Comprobación de permisos
 
 Cambia a la cuenta creada:
 
@@ -325,8 +325,8 @@ sudo -l
 
 El resultado permite verificar qué comandos puede ejecutar el usuario mediante sudo.
 
-## 3. Servidor web Apache y PHP
-### 3.1. Apertura del puerto HTTP
+## 6. Servidor web Apache y PHP
+### 6.1. Apertura del puerto HTTP
 
 Permite el tráfico HTTP en el firewall:
 
@@ -334,7 +334,7 @@ bash
 ``` bash
 sudo ufw allow 80/tcp
 ```
-### 3.2. Instalación de Apache
+### 6.2. Instalación de Apache
 
 Instala Apache:
 
@@ -354,7 +354,7 @@ Si el servicio está activo, abre un navegador desde otra máquina e introduce l
 
 Deberías visualizar la página predeterminada de Apache o el contenido del archivo index que hayas configurado.
 
-### 3.3. Instalación de PHP-FPM
+### 6.3. Instalación de PHP-FPM
 
 Instala PHP-FPM:
 
@@ -378,7 +378,7 @@ bash
 sudo systemctl reload apache2
 ```
 Nota: comprueba que la versión 8.5 está disponible en los repositorios de tu sistema. La versión de PHP debe coincidir con los paquetes y las rutas instalados.
-### 3.4. Configuración de PHP
+### 6.4. Configuración de PHP
 
 Abre el archivo de configuración de PHP-FPM:
 
@@ -395,7 +395,7 @@ bash
 ``` bash
 sudo systemctl restart php8.5-fpm
 ```
-### 3.5. Configuración del registro de errores
+### 6.5. Configuración del registro de errores
 
 Crea el archivo de registro:
 
@@ -412,11 +412,11 @@ sudo chown www-data:www-data /var/log/php_errors.log
 ```
 
 Comprueba que las directivas de registro de errores de php.ini apuntan al archivo correspondiente si deseas utilizarlo para registrar los errores de PHP.
-## 4. Cuentas de desarrollo
+## 7. Cuentas de desarrollo
 
 En este apartado se crea la cuenta operadorweb, destinada a trabajar con los archivos del sitio web.
 
-### 4.1. Creación del usuario
+### 7.1. Creación del usuario
 
 Crea el usuario sin generar automáticamente un directorio personal y establece /var/www/html como directorio de trabajo:
 
@@ -424,7 +424,7 @@ bash
 ``` bash
 sudo useradd -M -d /var/www/html -g www-data -s /bin/bash operadorweb
 ```
-### 4.2. Asignación de contraseña
+### 7.2. Asignación de contraseña
 
 Establece la contraseña del usuario:
 
@@ -435,7 +435,7 @@ sudo passwd operadorweb
 
 Introduce la contraseña correspondiente.
 
-### 4.3. Cambio de propietario y grupo
+### 7.3. Cambio de propietario y grupo
 
 Asigna la propiedad del directorio web al usuario operadorweb y al grupo www-data:
 
@@ -443,7 +443,7 @@ bash
 ``` bash
 sudo chown -R operadorweb:www-data /var/www/html
 ```
-### 4.4. Configuración de permisos
+### 7.4. Configuración de permisos
 
 Establece permisos de lectura, escritura y ejecución para el propietario y el grupo:
 
@@ -458,7 +458,7 @@ Con esta configuración:
 * Grupo: puede leer, escribir y acceder a los directorios.
 * Otros usuarios: pueden leer y acceder, pero no modificar los archivos.
 
-### 4.5. Comprobación del usuario y del directorio web
+### 7.5. Comprobación del usuario y del directorio web
 
 Cambia a la cuenta de desarrollo:
 
@@ -478,8 +478,8 @@ ls -l
 
 Si el usuario existe y tiene acceso al directorio, podrás trabajar con los archivos del sitio web según los permisos asignados.
 
-## 5. Configuración de HTTPS
-### 5.1. Apertura del puerto HTTPS
+## 8. Configuración de HTTPS
+### 8.1. Apertura del puerto HTTPS
 
 Permite el tráfico HTTPS:
 
@@ -487,7 +487,7 @@ bash
 ``` bash
 sudo ufw allow 443/tcp
 ```
-### 5.2. Creación de un certificado SSL autofirmado
+### 8.2. Creación de un certificado SSL autofirmado
 
 Genera una clave privada y un certificado autofirmado con una validez de 365 días:
 
@@ -512,7 +512,7 @@ Email Address	Puede dejarse vacío
 El campo Common Name no debe contener espacios en blanco.
 
 Nota de seguridad: al ser un certificado autofirmado, el navegador mostrará una advertencia de confianza. Para un servicio público o de producción, utiliza un certificado emitido por una autoridad certificadora reconocida.
-### 5.3. Habilitación del módulo SSL
+### 8.3. Habilitación del módulo SSL
 
 Activa el módulo SSL de Apache:
 
@@ -520,7 +520,7 @@ bash
 ``` bash
 sudo a2enmod ssl
 ```
-### 5.4. Configuración del sitio virtual seguro
+### 8.4. Configuración del sitio virtual seguro
 
 Realiza una copia de seguridad del archivo de configuración original:
 
@@ -553,7 +553,7 @@ apache
 
 Sustituye your_domain_or_ip por los valores que correspondan a tu servidor y a la ubicación real de tu sitio web.
 
-### 5.5. Activación del sitio virtual
+### 8.5. Activación del sitio virtual
 
 Activa el sitio SSL:
 
@@ -575,7 +575,7 @@ bash
 ``` bash
 sudo systemctl reload apache2
 ```
-### 5.6. Habilitación de mod_rewrite
+### 8.6. Habilitación de mod_rewrite
 
 Activa el módulo de reescritura de Apache:
 
@@ -584,7 +584,7 @@ bash
 sudo a2enmod rewrite
 ```
 
-### 5.7. Havilitar AllowOverdrive apache
+### 8.7. Havilitar AllowOverdrive apache
 
 Entrar al archivo de configuracion usando:
 
@@ -600,7 +600,7 @@ y modificas
   AllowOverride All
 </Directory>
 ```
-### 5.8. Configuración de .htaccess
+### 8.8. Configuración de .htaccess
 
 Accede al directorio web:
 
@@ -634,8 +634,8 @@ RewriteRule ^(.*)$ 10.199.9.174/$1 [R,L]
 
 Asegúrate de que el sitio HTTPS funciona antes de habilitar una redirección permanente.
 
-## 6. MariaDB y phpMyAdmin
-### 6.1. Instalación de MariaDB
+## 9. MariaDB y phpMyAdmin
+### 9.1. Instalación de MariaDB
 
 Actualiza los repositorios e instala MariaDB:
 
@@ -644,7 +644,7 @@ bash
 sudo apt update &&
 sudo apt install mariadb-server -y
 ``` 
-### 6.2. Comprobación del puerto
+### 9.2. Comprobación del puerto
 
 MariaDB utiliza normalmente el puerto TCP 3306.
 
@@ -661,7 +661,7 @@ bash
 ``` bash
 sudo ss -punta | grep mariadb
 ```
-### 6.3. Configuración del acceso remoto
+### 9.3. Configuración del acceso remoto
 
 Edita el archivo de configuración:
 
@@ -693,7 +693,7 @@ sudo systemctl restart mariadb
 ```
 
 Advertencia de seguridad: 0.0.0.0 permite escuchar en todas las interfaces de red. El acceso remoto debe limitarse mediante el firewall, las cuentas de usuario y las reglas de red. No expongas el puerto 3306 a Internet sin las medidas de seguridad adecuadas.
-### 6.4. Mantenimiento del servicio MariaDB
+### 9.4. Mantenimiento del servicio MariaDB
 
 Consulta el estado del servicio:
 
@@ -722,7 +722,7 @@ bash
 ``` bash
 sudo systemctl enable mariadb
 ```
-### 6.5. Creación de un usuario administrador
+### 9.5. Creación de un usuario administrador
 
 Entra en la consola de MariaDB:
 
@@ -756,7 +756,7 @@ EXIT;
 
 Importante: el usuario 'adminsql'@'%' puede conectarse desde cualquier host que sea accesible y cumpla el resto de las condiciones. La contraseña paso es únicamente un ejemplo de laboratorio; utiliza una contraseña robusta y limita el origen de las conexiones siempre que sea posible.
 
-### 6.6. Seguridad de MariaDB
+### 9.6. Seguridad de MariaDB
 
 Ejecuta el asistente de seguridad:
 
@@ -776,7 +776,7 @@ Recargar las tablas de privilegios: responde Sí.
 
 Las preguntas concretas pueden variar según la versión de MariaDB y el método de autenticación configurado.
 
-### 6.7. Instalación del módulo MySQL para PHP
+### 9.7. Instalación del módulo MySQL para PHP
 
 Instala el módulo necesario para conectar PHP con MariaDB/MySQL:
 
@@ -791,7 +791,7 @@ bash
 ``` bash
 sudo systemctl restart php8.5-fpm
 ```
-### 6.8. Instalación de phpMyAdmin
+### 9.8. Instalación de phpMyAdmin
 
 Instala phpMyAdmin y sus dependencias:
 
@@ -811,8 +811,8 @@ Puedes utilizar paso únicamente en un entorno de prácticas aislado; en cualqui
 
 Una vez terminada la instalación, comprueba que Apache, PHP-FPM y MariaDB funcionan correctamente.
 
-## 7. Xdebug
-### 7.1 Instalacion
+## 10. Xdebug
+### 10.1 Instalacion
 
 Introduce este comando para instalar x-debug
 ``` bash
@@ -845,8 +845,8 @@ despues reinicias php8.5-fpm
 sudo systemctl restart php8.5-fpm 
 ``` 
 
-## 8. Chequeo final
-### 8.1. Comprobación de las reglas del firewall
+## 11. Chequeo final
+### 11.1. Comprobación de las reglas del firewall
 
 Muestra las reglas de UFW con sus números:
 
@@ -866,7 +866,7 @@ En este servidor se utilizan, como mínimo, los siguientes puertos según los se
 | 443 | TCP | HTTPS |
 | 3306 | TCP | MariaDB, si se permite el acceso remoto |
 
-### 8.2. Eliminación de reglas innecesarias
+### 11.2. Eliminación de reglas innecesarias
 
 Si aparecen reglas IPv6 duplicadas que deseas eliminar, identifica primero el número de la regla:
 
@@ -885,7 +885,7 @@ sudo ufw delete NUMERO
 Sustituye NUMERO por el identificador real de la regla.
 
 Importante: no elimines automáticamente todas las reglas IPv6. IPv6 puede ser necesario para el funcionamiento normal de la red. Elimina únicamente las reglas que hayas confirmado que no necesitas.
-### 8.3. Lista de comprobación final
+### 11.3. Lista de comprobación final
 * Ubuntu está instalado y actualizado.
 * Las particiones / y /var están configuradas.
 * La dirección IP y la zona horaria son correctas.

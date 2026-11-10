@@ -26,15 +26,14 @@
         <div>
             <div>
                 <h2>UT2: INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DEL ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN</h2>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md" target="_blank" rel="noopener">SGV-USUD</a></h4>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md" target="_blank" rel="noopener">Cliente</a></h4>
-                <h4><a href="doc/SGVDWESProyectoTema4.pdf" target="_blank" rel="noopener">Documentación Netbeans</a></h4>
-                <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md" target="_blank" rel="noopener">USED-Servidor</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md" target="_blank" rel="noopener">W11ED-ClienteDesarrollo</a></h4>
             </div>
         </div>
         <div>
             <div>
                 <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema3"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a> <a href="SGVDWESProyectoTema3/indexProyectoTema3.php">UT3: CARACTERÍSTICAS DEL LENGUAJE PHP</a></h2>
+                <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
             </div>
         </div>
         <div>
