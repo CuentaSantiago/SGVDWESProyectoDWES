@@ -6,60 +6,70 @@
 ##### Alumno: Santiago González Vicente
 ---
 #### 📑 Índice
-- 1.[Instalación y configuración inicial](#1-instalación-y-configuración-inicial)
-  - 1.1.[Configuración de la máquina virtual](#11-Configuración-de-la-máquina-virtual)
-  - 1.2.[Instalación de Ubuntu](#12-Instalación-de-Ubuntu)
-  - 1.3.[Configuración de red](#13-Configuración-de-red)
-  - 1.4.[Configuración de la hora](#14-Configuración-de-la-hora)
-  - 1.5.[Actualización del sistema](#15-Actualización-del-sistema)
-- 2.[SSH](#2-SSH)
-- 3.[UFW](#3-UFW)
-- 4.[ClamAV](#4-ClamAV)
-- 5.[Cuentas de administración](#5-Cuentas-de-administración)
-  - 5.1.[Creación del usuario](#51-Creación-del-usuario)
-  - 5.2.[Comprobación de grupos](#52-Comprobación-de-grupos)
-  - 5.3.[Asignación de permisos administrativos](#53-Asignación-de-permisos-administrativos)
-  - 5.4.[Comprobación de permisos](#54-Comprobación-de-permisos)
-- 6.[Usuarios Enjaulados](#6-Usuarios-Enjaulados)
-  - 6.1.[Creación de Grupo](#61-Creación-de-Grupo)
-  - 6.2.[Creacion de Usuario Y cambio de contraseña](#62-Creacion-de-Usuario-Y-cambio-de-contraseña)
-- 7.[Servidor web Apache](#7-Servidor-web-Apache)
-  - 7.1.[Apertura del puerto HTTP](#71-Apertura-del-puerto-HTTP)
-  - 7.2.[Instalación de Apache](#72-Instalación-de-Apache)
-- 8.[PHP-FPM](#8-PHP-FPM)
-  - 8.1.[Configuración de PHP](#81-Configuración-de-PHP)
-  - 8.2.[Configuración del registro de errores](#82-Configuración-del-registro-de-errores)
-- 9.[Cuentas de desarrollo](9-Cuentas-de-desarrollo)
-  - 9.1.[Creación del usuario](#91-Creación-del-usuario)
-  - 9.2.[Asignación de contraseña](#92-Asignación-de-contraseña)
-  - 9.3.[Cambio de propietario y grupo](#93-Cambio-de-propietario-y-grupo)
-  - 9.4.[Configuración de permisos](#94-Configuración-de-permisos)
-  - 9.5.[Comprobación del usuario y del directorio web](#95-Comprobación-del-usuario-y-del-directorio-web)
-- 10.[Configuración de HTTPS](#10-Configuración-de-HTTPS)
-  - 10.1.[Apertura del puerto HTTPS](#101-Apertura-del-puerto-HTTPS)
-  - 10.2.[Creación de un certificado SSL autofirmado](#102-Creación-de-un-certificado-SSL-autofirmado)
-  - 10.3.[Habilitación del módulo SSL](#103-Habilitación-del-módulo-SSL)
-  - 10.4.[Configuración del sitio virtual seguro](#104-Configuración-del-sitio-virtual-seguro)
-  - 10.5.[Activación del sitio virtual](#105-Activación-del-sitio-virtual)
-  - 10.6.[Habilitación de mod_rewrite](#106-Habilitación-de-mod_rewrite)
-  - 10.7.[Havilitar AllowOverdrive apache](#107-Havilitar-AllowOverdrive-apache)
-  - 10.8.[Configuración de .htaccess](#108-Configuración-de-.htaccess)
-- 11.[MariaDB y phpMyAdmin](#11-MariaDB-y-phpMyAdmin)
-  - 11.1.[Instalación de MariaDB](#111-Instalación-de-MariaDB)
-  - 11.2.[Comprobación del puerto](#112-Comprobación-del-puerto)
-  - 11.3.[Configuración del acceso remoto](#113-Configuración-del-acceso-remoto)
-  - 11.4.[Mantenimiento del servicio MariaDB](#114-Mantenimiento-del-servicio-MariaDB)
-  - 11.5.[Creación de un usuario administrador](#115-Creación-de-un-usuario-administrador)
-  - 11.6.[Seguridad de MariaDB](#116-Seguridad-de-MariaDB)
-  - 11.7.[Instalación del módulo MySQL para PHP](#117-Instalación-del-módulo-MySQL-para-PHP)
-  - 11.8.[Instalación de phpMyAdmin](#118-Instalación-de-phpMyAdmin)
-- 12.[Xdebug](12-Xdebug)
-  - 12.1.[Instalacion](#121-Instalacion)
-- 13.[Chequeo final](#13-Chequeo-final)
-  - 13.1.[Comprobación de las reglas del firewall](#131-Comprobación-de-las-reglas-del-firewall)
-  - 13.2.[Eliminación de reglas innecesarias](#132-Eliminación-de-reglas-innecesarias)
-  - 13.3.[Lista de comprobación final](#133-Lista-de-comprobación-final)
----
+- [🖥️ Servidor Web](#️-servidor-web)
+        - [Fecha Creación: 15/09/2026](#fecha-creación-15092026)
+        - [Fecha Actualizada: 26/10/2026](#fecha-actualizada-26102026)
+        - [Ciclo formativo: DAW2](#ciclo-formativo-daw2)
+        - [Alumno: Santiago González Vicente](#alumno-santiago-gonzález-vicente)
+      - [📑 Índice](#-índice)
+  - [1. Instalación y configuración inicial](#1-instalación-y-configuración-inicial)
+    - [1.1. Configuración de la máquina virtual](#11-configuración-de-la-máquina-virtual)
+    - [1.2. Instalación de Ubuntu](#12-instalación-de-ubuntu)
+    - [1.3. Configuración de red](#13-configuración-de-red)
+    - [1.4. Configuración de la hora](#14-configuración-de-la-hora)
+    - [1.5. Actualización del sistema](#15-actualización-del-sistema)
+  - [2. SSH](#2-ssh)
+  - [3. UFW](#3-ufw)
+  - [4. ClamAV](#4-clamav)
+  - [5. Cuentas de administración](#5-cuentas-de-administración)
+    - [5.1. Creación del usuario](#51-creación-del-usuario)
+    - [5.2. Comprobación de grupos](#52-comprobación-de-grupos)
+    - [5.3. Asignación de permisos administrativos](#53-asignación-de-permisos-administrativos)
+    - [5.4. Comprobación de permisos](#54-comprobación-de-permisos)
+  - [6. Usuarios Enjaulados](#6-usuarios-enjaulados)
+    - [6.1 Creación de Grupo](#61-creación-de-grupo)
+    - [6.2 Creacion de Usuario Y cambio de contraseña](#62-creacion-de-usuario-y-cambio-de-contraseña)
+  - [7. Servidor web Apache](#7-servidor-web-apache)
+    - [7.1. Apertura del puerto HTTP](#71-apertura-del-puerto-http)
+    - [7.2. Instalación de Apache](#72-instalación-de-apache)
+    - [3.2. Registro de errores y página para errores 404](#32-registro-de-errores-y-página-para-errores-404)
+  - [8. PHP FPM](#8-php-fpm)
+    - [8.1. Configuración de PHP](#81-configuración-de-php)
+    - [8.2. Configuración del registro de errores](#82-configuración-del-registro-de-errores)
+  - [9. Cuentas de desarrollo](#9-cuentas-de-desarrollo)
+    - [9.1. Creación del usuario](#91-creación-del-usuario)
+    - [9.2. Asignación de contraseña](#92-asignación-de-contraseña)
+    - [9.3. Cambio de propietario y grupo](#93-cambio-de-propietario-y-grupo)
+    - [9.4. Configuración de permisos](#94-configuración-de-permisos)
+    - [9.5. Comprobación del usuario y del directorio web](#95-comprobación-del-usuario-y-del-directorio-web)
+  - [10. Configuración de HTTPS](#10-configuración-de-https)
+    - [10.1. Apertura del puerto HTTPS](#101-apertura-del-puerto-https)
+    - [10.2. Creación de un certificado SSL autofirmado](#102-creación-de-un-certificado-ssl-autofirmado)
+    - [10.3. Habilitación del módulo SSL](#103-habilitación-del-módulo-ssl)
+    - [10.4. Configuración del sitio virtual seguro](#104-configuración-del-sitio-virtual-seguro)
+    - [10.5. Activación del sitio virtual](#105-activación-del-sitio-virtual)
+    - [10.6. Habilitación de mod\_rewrite](#106-habilitación-de-mod_rewrite)
+    - [10.7. Havilitar AllowOverdrive apache](#107-havilitar-allowoverdrive-apache)
+    - [10.8. Configuración de .htaccess](#108-configuración-de-htaccess)
+  - [11. Pagina Error apache](#11-pagina-error-apache)
+  - [11. MariaDB y phpMyAdmin](#11-mariadb-y-phpmyadmin)
+    - [11.1. Instalación de MariaDB](#111-instalación-de-mariadb)
+    - [11.2. Comprobación del puerto](#112-comprobación-del-puerto)
+    - [11.3. Configuración del acceso remoto](#113-configuración-del-acceso-remoto)
+    - [11.4. Mantenimiento del servicio MariaDB](#114-mantenimiento-del-servicio-mariadb)
+    - [11.5. Creación de un usuario administrador](#115-creación-de-un-usuario-administrador)
+    - [11.6. Seguridad de MariaDB](#116-seguridad-de-mariadb)
+    - [11.7. Instalación del módulo MySQL para PHP](#117-instalación-del-módulo-mysql-para-php)
+    - [11.8. Instalación de phpMyAdmin](#118-instalación-de-phpmyadmin)
+  - [12. Xdebug](#12-xdebug)
+    - [12.1 Instalacion](#121-instalacion)
+  - [13. Chequeo final](#13-chequeo-final)
+    - [13.1. Comprobación de las reglas del firewall](#131-comprobación-de-las-reglas-del-firewall)
+    - [13.2. Eliminación de reglas innecesarias](#132-eliminación-de-reglas-innecesarias)
+    - [13.3. Modulos Apache](#133-modulos-apache)
+    - [13.4. Modulos PHP](#134-modulos-php)
+    - [13.2. Eliminación de reglas innecesarias](#132-eliminación-de-reglas-innecesarias-1)
+    - [13.3. Lista de comprobación final](#133-lista-de-comprobación-final)
 
 ## 1. Instalación y configuración inicial
 
@@ -87,10 +97,10 @@ Sigue estos pasos durante el proceso de instalación:
 
 Divide el disco de 500 GB en dos particiones:
 
-| Partición | Tamaño | Sistema de archivos | Punto de montaje |
-| --- | --- | --- | --- |
-| Sistema | 150 GB | ext4 | / |
-| Datos y servicios | Espacio restante | ext4 | /var |
+| Partición         | Tamaño           | Sistema de archivos | Punto de montaje |
+| ----------------- | ---------------- | ------------------- | ---------------- |
+| Sistema           | 150 GB           | ext4                | /                |
+| Datos y servicios | Espacio restante | ext4                | /var             |
 
 Para crear cada partición:
 
@@ -348,16 +358,8 @@ Ponemos la contraseña, la contraseña es paso
 sudo passwd enjaulado1
 ```
 
-### 6.3 chekeo 
-comprueba que el usuario, la contraseña y el grupo existen
-``` bash
-su enjaulado1
-id
-exit
-```
-
-Despues de esto tienes que repetir este proceso hasta crear el usuario enjaulado3
 ## 7. Servidor web Apache
+
 ### 7.1. Apertura del puerto HTTP
 
 Permite el tráfico HTTP en el firewall:
@@ -370,14 +372,14 @@ sudo ufw allow 80/tcp
 
 Instala Apache:
 
-bash
+
 ``` bash
 sudo apt install apache2 --fix-missing
 ```
 
 Comprueba el estado del servicio:
 
-bash
+
 ``` bash
 sudo systemctl status apache2
 ```
@@ -385,6 +387,30 @@ sudo systemctl status apache2
 Si el servicio está activo, abre un navegador desde otra máquina e introduce la dirección IP del servidor.
 
 Deberías visualizar la página predeterminada de Apache o el contenido del archivo index que hayas configurado.
+
+### 3.2. Registro de errores y página para errores 404
+
+Se crea un directorio para guardar los archivos relacionados con los errores:
+
+``` bash
+sudo mkdir /var/www/html/error
+sudo touch /var/www/html/error/error.log
+```
+Antes de modificar la configuración del sitio web predeterminado, se guarda una copia del archivo original:
+
+``` bash
+cd /etc/apache2/sites-available
+sudo cp 000-default.conf 000-default.conf.backup
+sudo nano 000-default.conf
+```
+
+Dentro del bloque <VirtualHost *:80>, se añaden o se modifican estas directivas:
+
+``` bash
+ErrorLog /var/www/html/error/error.log
+ErrorDocument 404 /error/404.html
+```
+ErrorLog indica dónde se guardan los errores de Apache. ErrorDocument 404 establece la página que se mostrará cuando no se encuentre el recurso solicitado. Para que esta última directiva funcione como se espera, debe existir el archivo /var/www/html/error/404.html.
 
 ## 8. PHP FPM
 
@@ -665,6 +691,9 @@ RewriteRule ^(.*)$ 10.199.9.174/$1 [R,L]
 
 Asegúrate de que el sitio HTTPS funciona antes de habilitar una redirección permanente.
 
+## 11. Pagina Error apache
+
+
 ## 11. MariaDB y phpMyAdmin
 ### 11.1. Instalación de MariaDB
 
@@ -890,12 +919,146 @@ Revisa los puertos permitidos y comprueba que solo estén abiertos los necesario
 
 En este servidor se utilizan, como mínimo, los siguientes puertos según los servicios habilitados:
 
-| Puerto | Protocolo | Servicio |
-| --- | --- | --- |
-| 22 | TCP | SSH |
-| 80 | TCP | HTTP |
-| 443 | TCP | HTTPS |
-| 3306 | TCP | MariaDB, si se permite el acceso remoto |
+| Puerto | Protocolo | Servicio                                |
+| ------ | --------- | --------------------------------------- |
+| 22     | TCP       | SSH                                     |
+| 80     | TCP       | HTTP                                    |
+| 443    | TCP       | HTTPS                                   |
+| 3306   | TCP       | MariaDB, si se permite el acceso remoto |
+
+### 13.2. Eliminación de reglas innecesarias
+
+Si aparecen reglas IPv6 duplicadas que deseas eliminar, identifica primero el número de la regla:
+
+bash
+``` bash
+sudo ufw status numbered
+```
+
+Después, elimina la regla correspondiente:
+
+bash
+``` bash
+sudo ufw delete NUMERO
+```
+
+Sustituye NUMERO por el identificador real de la regla.
+
+Importante: no elimines automáticamente todas las reglas IPv6. IPv6 puede ser necesario para el funcionamiento normal de la red. Elimina únicamente las reglas que hayas confirmado que no necesitas.
+
+### 13.3. Modulos Apache
+
+Con este comando lo compruebas
+bash
+``` bash
+apache2ctl -M
+```
+
+y Estos son los unicos modulos que tienen que estar en los estados indicados
+| Modulo               | Estado   |
+| -------------------- | -------- |
+| core_module          | (static) |
+| so_module            | (static) |
+| watchdog_module      | (static) |
+| http_module          | (static) |
+| log_config_module    | (static) |
+| logio_module         | (static) |
+| version_module       | (static) |
+| unixd_module         | (static) |
+| systemd_module       | (static) |
+| access_compat_module | (shared) |
+| alias_module         | (shared) |
+| auth_basic_module    | (shared) |
+| authn_core_module    | (shared) |
+| authn_file_module    | (shared) |
+| authz_core_module    | (shared) |
+| authz_host_module    | (shared) |
+| authz_user_module    | (shared) |
+| autoindex_module     | (shared) |
+| deflate_module       | (shared) |
+| dir_module           | (shared) |
+| env_module           | (shared) |
+| filter_module        | (shared) |
+| mime_module          | (shared) |
+| mpm_event_module     | (shared) |
+| negotiation_module   | (shared) |
+| proxy_module         | (shared) |
+| proxy_fcgi_module    | (shared) |
+| reqtimeout_module    | (shared) |
+| rewrite_module       | (shared) |
+| setenvif_module      | (shared) |
+| socache_shmcb_module | (shared) |
+| ssl_module           | (shared) |
+| status_module        | (shared) |
+
+### 13.4. Modulos PHP
+
+Con este comando lo compruebas
+bash
+``` bash
+apache2ctl -M
+```
+
+y Estos son los unicos modulos que tienen que estar en los estados indicados
+| PHP Modules  |
+| ------------ |
+| bcmath       |
+| bz2          |
+| calendar     |
+| Core         |
+| ctype        |
+| curl         |
+| date         |
+| dom          |
+| exif         |
+| FFI          |
+| fileinfo     |
+| filter       |
+| ftp          |
+| gd           |
+| gettext      |
+| hash         |
+| iconv        |
+| json         |
+| lexbor       |
+| libxml       |
+| mbstring     |
+| mcrypt       |
+| mysqli       |
+| mysqlnd      |
+| openssl      |
+| pcntl        |
+| pcre         |
+| PDO          |
+| pdo_mysql    |
+| Phar         |
+| posix        |
+| random       |
+| readline     |
+| Reflection   |
+| session      |
+| shmop        |
+| SimpleXML    |
+| sockets      |
+| sodium       |
+| SPL          |
+| standard     |
+| sysvmsg      |
+| sysvsem      |
+| sysvshm      |
+| tokenizer    |
+| uri          |
+| xdebug       |
+| xml          |
+| xmlreader    |
+| xmlwriter    |
+| xsl          |
+| Zend OPcache |
+| zip          |
+| zlib         |
+| [Zend Modules] |
+| Xdebug         |
+| Zend OPcache   |
 
 ### 13.2. Eliminación de reglas innecesarias
 
