@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--       <link rel="shortcut icon" type="image/jpg" href="webroot/favicon/favicon.ico">--> 
+        <link rel="shortcut icon" type="image/jpg" href="webroot/favicon/favicon.ico">
         <link rel="stylesheet" type="text/css" href="webroot/css/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Santiago González Vicente</title>
@@ -26,15 +26,14 @@
         <div>
             <div>
                 <h2>UT2: INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DEL ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN</h2>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md" target="_blank" rel="noopener">SGV-USUD</a></h4>
-                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md" target="_blank" rel="noopener">Cliente</a></h4>
-                <h4><a href="doc/SGVDWESProyectoTema4.pdf" target="_blank" rel="noopener">Documentación Netbeans</a></h4>
-                <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/SGV-USUD.md" target="_blank" rel="noopener">USED-Servidor</a></h4>
+                <h4><a href="https://github.com/CuentaSantiago/SGVDWESProyectoDWES/blob/developer/doc/ClienteDeDesarrollo.md" target="_blank" rel="noopener">W11ED-ClienteDesarrollo</a></h4>
             </div>
         </div>
         <div>
             <div>
                 <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema3"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a> <a href="SGVDWESProyectoTema3/indexProyectoTema3.php">UT3: CARACTERÍSTICAS DEL LENGUAJE PHP</a></h2>
+                <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
             </div>
         </div>
         <div>
@@ -44,7 +43,9 @@
         </div>
         <div>
             <div>
-                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema5"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a><a href="SGVDWESProyectoTema5/indexProyectoTema5.php">UT5: DESARROLLO DE APLICACIONES WEB</a></h2>
+                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema5"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a>UT5: DESARROLLO DE APLICACIONES WEB</h2>
+                <h4><a href="SGVDWESProyectoTema5/indexProyectoTema5.php">Proyecto tema 5</a></h4>
+                <h4><a href="SGVDWESProyectoLogInLoOffgTema5/codigoPHP/Login.php">Proyecto login y logoff tema 5</a></h4>
             </div>
         </div>
         <div>
