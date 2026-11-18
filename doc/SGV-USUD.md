@@ -693,7 +693,32 @@ Asegúrate de que el sitio HTTPS funciona antes de habilitar una redirección pe
 
 ## 11. Pagina Error apache
 
+Se crea un directorio para guardar los archivos con los errores:
+``` bash
+sudo mkdir /var/www/html/error
+sudo touch /var/www/html/error/error.log
+```
 
+Primero guarda una copia del archivo original:
+``` bash
+cd /etc/apache2/sites-available
+sudo cp 000-default.conf 000-default.conf.backup
+```
+
+Luego entra en el archivo:
+``` bash
+sudo nano 000-default.conf
+```
+
+Dentro de <VirtualHost *:80>, 
+añade o modifica:
+``` bash
+ErrorLog /var/www/html/error/error.log 
+ErrorDocument 404 /error/404.html
+```
+
+ErrorLog indica dónde se guardan los errores de Apache.
+ErrorDocument 404 establece la página que se mostrará cuando no se encuentre el recurso solicitado. Para que esta última directiva funcione como se espera, debe existir el archivo /var/www/html/error/404.html.
 ## 11. MariaDB y phpMyAdmin
 ### 11.1. Instalación de MariaDB
 
