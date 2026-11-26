@@ -32,20 +32,20 @@
         </div>
         <div>
             <div>
-                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema3"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a> <a href="SGVDWESProyectoTema3/indexProyectoTema3.php">UT3: CARACTERÍSTICAS DEL LENGUAJE PHP</a></h2>
+                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema3"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a> <a href="../SGVDWESProyectoTema3/indexProyectoTema3.php">UT3: CARACTERÍSTICAS DEL LENGUAJE PHP</a></h2>
                 <h4><a href="doc/EstudioFuncionesPHP.pdf" target="_blank" rel="noopener">Funciones PHP</a></h4>
             </div>
         </div>
         <div>
             <div>
-                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema4"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a><a href="SGVDWESProyectoTema4/indexProyectoTema4.php">UT4: TÉCNICAS DE ACCESO A DATOS EN PHP</a></h2>
+                <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema4"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a><a href="../SGVDWESProyectoTema4/indexProyectoTema4.php">UT4: TÉCNICAS DE ACCESO A DATOS EN PHP</a></h2>
             </div>
         </div>
         <div>
             <div>
                 <h2><a href="https://github.com/CuentaEducaSantiago/SGVDWESProyectoTema5"><i class="fa fa-github" style="font-size:40px; margin-right: 15px;"></i></a>UT5: DESARROLLO DE APLICACIONES WEB</h2>
-                <h4><a href="SGVDWESProyectoTema5/indexProyectoTema5.php">Proyecto tema 5</a></h4>
-                <h4><a href="SGVDWESProyectoLogInLoOffgTema5/codigoPHP/Login.php">Proyecto login y logoff tema 5</a></h4>
+                <h4><a href="../SGVDWESProyectoTema5/indexProyectoTema5.php">Proyecto tema 5</a></h4>
+                <h4><a href="http://daw204.local.ieslossauces.es/SGVDWESProyectoLogInLogOffTema5/indexProyectoLoginLogoff.php">Proyecto login y logoff tema 5</a></h4>
             </div>
         </div>
         <div>
